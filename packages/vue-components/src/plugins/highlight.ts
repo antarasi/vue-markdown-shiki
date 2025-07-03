@@ -160,7 +160,7 @@ export async function highlight(
                 lang,
                 theme: themeName as BundledTheme
               })
-      } catch (error) {
+      } catch {
         const themeName = getThemeName(theme)
         res = highlighter.codeToHtml(str, {
           lang: 'ansi',
