@@ -30,3 +30,6 @@ Temporary Items
 
 
 *.log
+
+
+packages/vue-components/dist/
