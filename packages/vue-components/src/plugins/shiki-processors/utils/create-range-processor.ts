@@ -9,7 +9,7 @@ export interface RangeProcessorOptions {
   [key: string]: any
 }
 
-export const createRangeProcessor = (classesMap: TagClassesDictionary, options?: RangeProcessorOptions): ProcessorHandler => {
+export const createRangeProcessor = (_classesMap: TagClassesDictionary, options?: RangeProcessorOptions): ProcessorHandler => {
   return (ctx) => {
     // 为了与shiki-v3兼容，创建一个transformLines选项
     const transformLines: LineOption[] = []
