@@ -133,6 +133,8 @@ export default defineComponent({
           )
         }
       }
+
+      return undefined
     }
 
     async function loadLangAsync() {

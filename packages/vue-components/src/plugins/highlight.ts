@@ -103,7 +103,7 @@ export async function highlight(
   const lineNoRE = /:(no-)?line-numbers$/
   const mustacheRE = /\{\{.*?\}\}/g
 
-  const returnCallback = (str: string, lang: string, attrs: string) => {
+  const returnCallback = (str: string, lang: string, _attrs: string) => {
     const vPre = vueRE.test(lang) ? '' : 'v-pre'
     lang = lang.replace(lineNoRE, '').replace(vueRE, '').toLowerCase() || defaultLang
     if (lang) {
